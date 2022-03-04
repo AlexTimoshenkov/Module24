@@ -1,0 +1,42 @@
+------------------------------------
+1. Ветка master до оперерации merge:
+------------------------------------
+commit 763d5c8c4c7b56217478053e8ef4a27e96335cd8 (HEAD -> master)
+Author: Alex <lostnebula@gmail.com>
+Date:   Fri Mar 4 04:44:01 2022 +0500
+
+    Making conflict 2
+
+commit 19b3a8aac7055cc31e860db2644486847d055481 (origin/master)
+Author: Alex <lostnebula@gmail.com>
+Date:   Fri Mar 4 04:35:44 2022 +0500
+
+    Scenarios and data model added
+
+------------------------------------
+2. Ветка err_branch до оперерации merge:
+------------------------------------
+
+commit 5429795f7c4f41332883bb3c03f2e899fe7add9d (HEAD -> err_branch)
+Author: Alex <lostnebula@gmail.com>
+Date:   Fri Mar 4 04:42:43 2022 +0500
+
+    Making conflict 1
+
+commit 19b3a8aac7055cc31e860db2644486847d055481 (origin/master)
+Author: Alex <lostnebula@gmail.com>
+Date:   Fri Mar 4 04:35:44 2022 +0500
+
+    Scenarios and data model added
+
+------------------------------------
+3. C:\Temp\Git\Module24>git merge err_branch
+------------------------------------
+Auto-merging Module 24. HW 24.1.2 Data Model in Markdown.md
+CONFLICT (content): Merge conflict in Module 24. HW 24.1.2 Data Model in Markdown.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+------------------------------------
+4. C:\Temp\Git\Module24>git commit -m "Resolving conflict"
+------------------------------------
+[master 6d842c8] Resolving conflict
